@@ -1,10 +1,7 @@
 import express, { Express, Request, Response } from 'express';
-import dotenv from 'dotenv';
-
-dotenv.config();
-
+import { PORT } from '../utils';
 const app: Express = express();
-const port = process.env.PORT || 3001;
+const port = PORT || 3001;
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Blog API HomePage ✅');
