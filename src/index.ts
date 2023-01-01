@@ -1,5 +1,5 @@
 import express, { Express, Request, Response } from 'express';
-import { PORT } from '../utils';
+import { PORT } from '../utils/index.js';
 const app: Express = express();
 const port = PORT || 3001;
 

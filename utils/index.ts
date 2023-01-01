@@ -1,1 +1,1 @@
-export * from './getSecretsFromENv';
+export * from './getSecretsFromEnv.js';
