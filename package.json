@@ -9,10 +9,12 @@
   "scripts": {
     "dev": "nodemon src/index.ts",
     "build": "tsc",
-    "start": "node ./dist/src/index_.js"
+    "lint": "eslint . --ext .ts",
+    "start": "yarn build && node ./dist/src/index_.js"
   },
   "type": "module",
   "dependencies": {
+    "class-validator": "^0.14.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "reflect-metadata": "^0.1.13",
@@ -21,6 +23,9 @@
   "devDependencies": {
     "@types/express": "^4.17.15",
     "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "eslint": "^8.31.0",
     "pg": "^8.8.0",
     "typescript": "^4.9.4"
   }
